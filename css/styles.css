@@ -719,6 +719,10 @@ button {
   background-color: #2e2f42;
   color: var(--background-color);
 }
+.footer-input::placeholder{
+  color:var(--background-color);
+  ;
+}
 .footer-button {
   background: #4d5ae5;
   border-radius: 4px;
