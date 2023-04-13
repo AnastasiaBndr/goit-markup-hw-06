@@ -149,11 +149,13 @@ button {
   line-height: 1.5;
   letter-spacing: 0.04em;
 
+  transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
   color: white;
 }
 .hero-button:hover,
 .hero-button:focus {
-  background-color: var(--hover-and-focus-color);
+  background: var(--hover-and-focus-color);
 }
 
 /* ==================MAIN================== */
