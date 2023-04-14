@@ -401,7 +401,6 @@
           </span>
         </section>
       </div>
-      
     </footer>
     <div data-modal class="backdrop is-hidden">
       <div class="backdrop-info-wrapper">
@@ -421,7 +420,7 @@
                 type="text"
                 placeholder=""
                 required
-              /><svg class="modal-icon" width="18px" height="18px">
+              /><svg class="modal-icon" width="12px" height="12px">
                 <use xlink:href="./images/icons.svg#icon-user"></use>
               </svg>
             </span>
@@ -435,7 +434,7 @@
                 type="text"
                 placeholder=""
                 required />
-              <svg class="modal-icon" width="18px" height="19px">
+              <svg class="modal-icon" width="13px" height="13px">
                 <use
                   xlink:href="./images/icons.svg#icon-phone"
                 ></use></svg></span
@@ -449,7 +448,7 @@
                 type="email"
                 placeholder=""
                 required
-              /><svg class="modal-icon" width="21px" height="18px">
+              /><svg class="modal-icon" width="15px" height="12px">
                 <use xlink:href="./images/icons.svg#icon-email"></use>
               </svg>
             </span>
@@ -463,21 +462,23 @@
             ></textarea>
           </label>
           <label class="checkbox-label">
-            <span class="checkbox-input-icon">
-              <input
-                type="checkbox"
-                class="checkbox"
-                id="user-comment"
-                name="user-comment-text"
-                required
-              />
+            <input
+              type="checkbox"
+              class="checkbox"
+              id="user-comment"
+              name="user-comment-text"
+              required
+            />
 
-              <svg class="bird-icon" width="10px" height="8px">
-                <use xlink:href="./images/icons.svg#icon-bird"></use>
-              </svg>
-            </span>
+            <svg class="bird-icon" width="10px" height="8px">
+              <use xlink:href="./images/icons.svg#icon-bird"></use>
+            </svg>
+
             <span class="checkbox-text"
-              >I accept the terms and conditions of the Privacy Policy</span
+              >I accept the terms and conditions of the
+              <a class="modal-privacy-link link" href=""
+                >Privacy Policy</a
+              ></span
             >
           </label>
           <button type="submit" class="hero-button modal-button">Send</button>
