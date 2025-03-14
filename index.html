@@ -13,6 +13,8 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/laptop.css" />
+    <link rel="stylesheet" href="./css/desktop.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.com/libraries/modern-normalize"
@@ -39,7 +41,7 @@
           <a href="./index.html" class="logo link"
             >Web<span class="studio-color">Studio</span></a
           >
-          <ul class="menu list">
+          <ul class="menu list hidden">
             <li class="menu-item">
               <a class="menu-link link" href="./index.html">Studio</a>
             </li>
@@ -52,7 +54,7 @@
           </ul>
         </nav>
 
-        <address class="address">
+        <address class="address hidden">
           <ul class="list">
             <li class="address-item">
               <a href="mailto:info@devstudio.com" class="link contact"
@@ -66,6 +68,15 @@
             </li>
           </ul>
         </address>
+        <button
+          type="button"
+          class="head-button hidden-for-laptop hidden-for-desktop"
+          data-modal-nav-open
+        >
+          <svg class="header-icon" width="24" height="24">
+            <use href="./images/icons.svg#icon-strokes"></use>
+          </svg>
+        </button>
       </div>
     </header>
     <!-- Main -->
@@ -82,12 +93,13 @@
           </button>
         </div>
       </section>
+      <!-- STRATEGY -->
       <section class="small-descr-section section">
         <div class="container">
           <h2 class="hidden-title visually-hidden"></h2>
           <ul class="list">
             <li class="small-descr-section-item">
-              <div class="small-text-image">
+              <div class="small-text-image hidden">
                 <svg class="small-text-icon" width="64" height="64">
                   <use href="./images/icons.svg#icon-antenna"></use>
                 </svg>
@@ -99,7 +111,7 @@
               </p>
             </li>
             <li class="small-descr-section-item">
-              <div class="small-text-image">
+              <div class="small-text-image hidden">
                 <svg class="small-text-icon" width="64" height="64">
                   <use href="./images/icons.svg#icon-clock"></use>
                 </svg>
@@ -111,7 +123,7 @@
               </p>
             </li>
             <li class="small-descr-section-item">
-              <div class="small-text-image">
+              <div class="small-text-image hidden">
                 <svg class="small-text-icon" width="64" height="64">
                   <use href="./images/icons.svg#icon-diagram"></use>
                 </svg>
@@ -123,7 +135,7 @@
               </p>
             </li>
             <li class="small-descr-section-item">
-              <div class="small-text-image">
+              <div class="small-text-image hidden">
                 <svg class="small-text-icon" width="64" height="64">
                   <use href="./images/icons.svg#icon-astronaut"></use>
                 </svg>
@@ -502,7 +514,7 @@
         </div>
       </div>
     </footer>
-    <div data-modal class="backdrop is-open">
+    <div data-modal class="backdrop is-open hidden">
       <div class="backdrop-info-wrapper">
         <button data-modal-close type="button" class="data-model-close-button">
           <svg class="cross-icon" width="8" height="8">
@@ -588,6 +600,77 @@
         </form>
       </div>
     </div>
+    <div data-modal-nav class="modal-navigation is-hidden">
+      <section class="container modal-info">
+        <div class="modal-info-upper-part">
+          <button data-modal-nav-close type="button" class="data-model-close-button">
+            <svg class="cross-icon" width="8" height="8">
+              <use href="./images/icons.svg#icon-cross"></use>
+            </svg>
+          </button>
+          <ul class="menu list">
+            <li>
+              <a
+                class="menu-item link menu-item-studio-index"
+                href="./index.html"
+                >Studio</a
+              >
+            </li>
+            <li>
+              <a class="menu-item link" href="./portfolio.html">Portfolio</a>
+            </li>
+            <li>
+              <a class="menu-item link" href="">Contacts</a>
+            </li>
+          </ul>
+        </div>
+        <div class="modal-info-lower-part">
+          <address class="address">
+            <ul class="list">
+              <li>
+                <a href="tel:+110001111111" class="link contact"
+                  >+11 (000)111-11-11</a
+                >
+              </li>
+              <li>
+                <a href="mailto:info@devstudio.com" class="link contact-email"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+          </address>
+          <ul class="navigation-modal-links">
+            <li class="our-team-link-item list">
+              <a class="our-team-link" href=""
+                ><svg class="our-team-soc-icon" width="24px" height="24px">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="our-team-link-item list">
+              <a class="our-team-link" href=""
+                ><svg class="our-team-soc-icon" width="24px" height="24px">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg></a>
+            </li>
+            <li class="our-team-link-item list">
+              <a class="our-team-link" href=""
+                ><svg class="our-team-soc-icon" width="24px" height="24px">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="our-team-link-item list">
+              <a class="our-team-link" href="">
+                <svg class="our-team-soc-icon" width="24px" height="24px">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                  </svg></a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </div>
+    <script src="./js/modal-nav.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>
