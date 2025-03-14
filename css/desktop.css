@@ -46,13 +46,13 @@
 
   .address .list {
     flex-direction: row;
-    gap:40px;
+    gap: 40px;
   }
   .menu {
     padding-top: 0;
     gap: 0;
     flex-direction: row;
-    gap:40px;
+    gap: 40px;
   }
 
   .menu-item:first-child::after {
@@ -70,8 +70,8 @@
     position: relative;
   }
 
-  .portfolio-box{
-    gap:48px 24px;
+  .portfolio-box {
+    gap: 48px 24px;
   }
 
   .menu-link {
@@ -133,9 +133,9 @@
     color: var(--background-color);
   }
 
-  .small-descr-section .list{
+  .small-descr-section .list {
     flex-direction: row;
-    gap:24px;
+    gap: 24px;
     align-items: baseline;
   }
 
@@ -191,15 +191,15 @@
     margin: 0;
   }
 
-  .our-team-list{
-    gap:24px;
+  .our-team-list {
+    gap: 24px;
   }
 
   .our-team {
     padding-bottom: 120px;
   }
 
-  .our-team-list-item .small-descr{
+  .our-team-list-item .small-descr {
     margin-top: 8px;
   }
 
@@ -213,32 +213,20 @@
     height: 88px;
   }
 
-  .our-portfolio-container{
+  .our-portfolio-container {
     padding: 120px 0;
   }
 
-  .input-button-footer {
-    flex-direction: row;
-    align-items: baseline;
-  }
-  .webstudio-container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    text-align: left;
-    align-items: baseline;
-    justify-content: space-between;
-  }
   .links,
   .footer-form {
     margin-top: 0;
   }
-  
+
   .footer-input {
     width: 264px;
   }
 
-  .footer-buttom{
+  .footer-buttom {
     margin-left: 0;
   }
 
@@ -258,9 +246,23 @@
 
   .portfolio-item {
     max-width: 396px;
-}
+  }
 
-.portfolio-picture-descr .small-descr{
+  .portfolio-picture-descr .small-descr {
     margin-top: 8px;
-}
+  }
+
+  .webstudio-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    text-align: left;
+    align-items: baseline;
+    justify-content: space-between;
+  }
+
+  .input-button-footer {
+    flex-direction: row;
+    align-items: baseline;
+  }
 }
