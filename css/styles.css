@@ -38,18 +38,6 @@ button {
   cursor: pointer;
 }
 
-@media (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
-  .hero {
-    background-image: linear-gradient(
-        rgba(46, 47, 66, 0.7),
-        rgba(46, 47, 66, 0.7)
-      ),
-      url("../images/mobile/hero-mobile2x.jpg");
-    background-size: 100%;
-  }
-}
 
 /* ==================ELEMENTS================== */
 :root {
@@ -490,7 +478,7 @@ ul.list .address-item:last-child {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url("../images/hero-image-phone.jpg");
+    url("../images/mobile/hero-mobile.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -1140,5 +1128,18 @@ input[type="checkbox"]:checked + .checkbox-label .checkbox-icon-container {
 @media screen and (max-width: 420px) {
   .hero {
     width: 100%;
+  }
+}
+
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url("../images/mobile/hero-mobile@2x.jpg");
+    background-size: 100%;
   }
 }

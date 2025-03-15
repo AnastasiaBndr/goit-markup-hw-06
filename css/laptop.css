@@ -22,18 +22,10 @@
     padding-right: 16px;
   }
 
-  @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    .hero {
-      background-image: linear-gradient(
-          rgba(46, 47, 66, 0.7),
-          rgba(46, 47, 66, 0.7)
-        ),
-        url("../images/hero-laptop2x.jpg");
-    }
+  .page-footer .container{
+    max-width: 584px;
+    gap:72px 24px;
   }
-
 
 /* ================HEADER STARTED================ */
 .page-header {
@@ -95,7 +87,7 @@
 /* ================HERO STARTED================ */
 
 .hero {
-  width: 768px;
+  max-width: 768px;
 }
 .main-title {
   font-family: "Roboto";
@@ -192,6 +184,11 @@
   margin-left: 0;
 }
 
+.small-descr-portfolio{
+  margin-top: 8px;
+  font-weight: 400;
+}
+
 /* ================CUSTOMERS ENDED================ */
 
 /* ================FOOTER STARTED================ */
@@ -282,5 +279,17 @@
   left: 0;
 }
 
+@media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+.hero {
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url("../images/hero-laptop@2x.jpg");
+}
+}
 
 }
+
